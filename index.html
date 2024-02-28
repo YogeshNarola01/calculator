@@ -27,6 +27,33 @@
                 <tr>
                     <td style="height: 50px; border: none;" align="center">
                         <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #d4d4d2; border-radius: 10PX;"
+                            onclick="calc.ans.value ='' " type="button">AC</button>
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #d4d4d2; border-radius: 10PX;"
+                            onclick="calc.ans.value = calc.ans.value.slice(0,calc.ans.value.length-1)"
+                            type="button">Del</button>
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px;  background-color: #ff9f0a; color: #ffff; border-radius: 10PX;"
+                            onclick="calc.ans.value+='%'" type="button">%</button>
+                        <!-- <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
+                            onclick="calc.ans.value+='1'" type="button">1</button>
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
+                            onclick="calc.ans.value+='2'" type="button">2</button>
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
+                            onclick="calc.ans.value+='3'" type="button">3</button> -->
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #ff9f0a; color: #ffff; border-radius: 10PX;"
+                            onclick="calc.ans.value+='/'" type="button">/</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 50px; border: none;" align="center">
+                        <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
                             onclick="calc.ans.value+='1'" type="button">1</button>
                         <button
@@ -37,7 +64,8 @@
                             onclick="calc.ans.value+='3'" type="button">3</button>
                         <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #ff9f0a; color: #ffff; border-radius: 10PX;"
-                            onclick="calc.ans.value+='+'" type="button">+</button>
+                            onclick="calc.ans.value+='*'" type="button">x</button>
+
                     </td>
                 </tr>
                 <tr>
@@ -69,36 +97,22 @@
                             onclick="calc.ans.value+='8'" type="button">9</button>
                         <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #ff9f0a; color: #ffff; border-radius: 10PX;"
-                            onclick="calc.ans.value+='*'" type="button">x</button>
+                            onclick="calc.ans.value+='+'" type="button">+</button>
                     </td>
                 </tr>
                 <tr>
                     <td style="height: 50px; border: none;" align="center">
-                        <button
-                            style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
-                            onclick="calc.ans.value+='0'" type="button">0</button>
                         <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
                             onclick="calc.ans.value+='.'" type="button">.</button>
                         <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;"
-                            onclick="calc.ans.value+='%'" type="button">%</button>
+                            onclick="calc.ans.value+='0'" type="button">0</button>
+                        <button
+                            style="width: 70px; height: 50px; font-size: 28px; background-color: #505050; color: #ffff; border-radius: 10PX;;"
+                            onclick="calc.ans.value+=','" type="button">,</button>
                         <button
                             style="width: 70px; height: 50px; font-size: 28px; background-color: #ff9f0a; color: #ffff; border-radius: 10PX;"
-                            onclick="calc.ans.value+='/'" type="button">/</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="height: 50px; border: none;" align="center">
-                        <button
-                            style="width: 95px; height: 50px; font-size: 28px; background-color: #d4d4d2; border-radius: 15PX;"
-                            onclick="calc.ans.value ='' " type="button">AC</button>
-                        <button
-                            style="width: 94px; height: 50px; font-size: 28px; background-color: #d4d4d2; border-radius: 15PX;"
-                            onclick="calc.ans.value = calc.ans.value.slice(0,calc.ans.value.length-1)"
-                            type="button">Del</button>
-                        <button
-                            style="width: 95px; height: 50px; font-size: 28px; background-color: #ff9f0a; color: #ffff; border-radius: 15PX;"
                             onclick="calc.ans.value = eval(calc.ans.value)" type="button"> = </button>
                     </td>
                 </tr>
